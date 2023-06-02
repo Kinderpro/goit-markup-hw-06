@@ -452,37 +452,38 @@
       </div>
     </footer>
     <div class="backdrop" data-modal>
+      <p class="text-modal-form">
+        Leave your contacts and we will call you back
+      </p>
+      <form class="">
+        <div>
+          <label
+            >Name
+            <input type="text" name="user-name" />
+          </label>
+        </div>
+        <label
+          >Phone
+          <input type="phone" name="user-phone" />
+        </label>
+        <label
+          >Email
+          <input type="email" name="user-email" />
+        </label>
+        <label>
+          <textarea
+            name="Comment"
+            placeholder="Text input"
+            class=""
+          ></textarea>
+        </label>
+        <label>
+          <input type="checkbox" class="" />
+        </label>
+        <button>Send</button>
+      </form>
       <div class="modal">
-        <p class="text-modal-form">
-          Leave your contacts and we will call you back
-        </p>
-        <form class="">
-          <div>
-            <label
-              >Name
-              <input type="text" name="user-name" />
-            </label>
-          </div>
-          <label
-            >Phone
-            <input type="phone" name="user-phone" />
-          </label>
-          <label
-            >Email
-            <input type="email" name="user-email" />
-          </label>
-          <label>
-            <textarea
-              name="Comment"
-              placeholder="Text input"
-              class=""
-            ></textarea>
-          </label>
-          <label>
-            <input type="checkbox" class="" />
-          </label>
-          <button>Send</button>
-        </form>
+        
 
         <button type="button" class="modal-close-btn" data-modal-close>
           <svg class="modal-close-icon" width="8" height="8">
