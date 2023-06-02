@@ -466,9 +466,13 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
-  gap: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  border: none;
   color: #ffffff;
   background: #4d5ae5;
   border-radius: 4px;
@@ -478,6 +482,9 @@ body {
 .btn-footer-telegram:hover,
 .btn-footer-telegram:focus {
   background-color: #404bbf;
+}
+.img-footer-telegram {
+  margin-left: 16px;
 }
 /* =================== Portfolio =================== */
 .hero-portfolio {
