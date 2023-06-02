@@ -458,7 +458,7 @@ body {
 .input-footer::placeholder {
   font-weight: 400;
   font-size: 12px;
-  line-height: 2;
+  line-height: 1.5;
   letter-spacing: 0.04em;
   color: #ffffff;
 }
