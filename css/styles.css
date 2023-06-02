@@ -441,12 +441,12 @@ body {
 .social-icon {
   fill: #f4f4fd;
 }
-.btn-input-form-footer {
+/* .btn-input-form-footer {
   display: flex;
   justify-content: center;
   gap: 24px;
   margin-top: 16px;
-}
+} */
 .input-footer {
   width: 264px;
   height: 40px;
@@ -636,8 +636,8 @@ body {
   fill: #ffffff;
 }
 /* =================== MODAL Forma =================== */
-.modal-form {
-  padding: 72px 24px 23px 24px;
+.modal-form-backdrop {
+  padding: 72px 24px 24px 24px;
   display: flex;
   flex-direction: column;
 }
