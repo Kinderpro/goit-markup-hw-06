@@ -357,7 +357,6 @@ body {
   gap: 24px;
 }
 
-
 .company-link {
   display: flex;
   justify-content: center;
@@ -605,6 +604,7 @@ body {
   width: 408px;
   min-height: 584px;
   background: #fcfcfc;
+  padding: 72px 24px 24px 24px;
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
@@ -642,10 +642,11 @@ body {
 }
 /* =================== MODAL Forma =================== */
 .modal-form-backdrop {
-  padding: 72px 24px 24px 24px;
   display: flex;
   flex-direction: column;
+  justify-content: center;
 }
+
 .text-modal-form {
   font-weight: 500;
   font-size: 16px;
@@ -654,12 +655,21 @@ body {
   letter-spacing: 0.02em;
   color: #2e2f42;
   margin-bottom: 16px;
-  
 }
-.modal-form-text-field {
+.modal-form-field {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
   display: block;
   margin-bottom: 4px;
+  color: #8e8f99;
 }
+.modal-form-wrapper {
+  position: relative;
+  display: block;
+}
+
 .modal-form-input {
   padding-left: 38px;
   display: block;
@@ -677,15 +687,7 @@ body {
 .modal-form-input:focus + .icon-input-field {
   fill: #4d5ae5;
 }
-.modal-form-wrapper {
-  position: relative;
-  display: block;
-}
 
-.modal-form-message {
-  width: 100%;
-  height: 120px;
-}
 .icon-input-field {
   position: absolute;
   display: block;
@@ -695,19 +697,16 @@ body {
   fill: #2e2f42;
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form-text-field {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
+.comment-text-message {
+  margin-bottom: 16px;
 }
 .modal-form-message {
+  width: 100%;
+  height: 120px;
   resize: none;
-  padding: 8px 16px;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 4px;
-  margin-bottom: 16px;
+  padding: 8px 16px;
   transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-form-message:focus {
@@ -721,6 +720,7 @@ body {
   letter-spacing: 0.04em;
   color: rgba(46, 47, 66, 0.4);
 }
+
 .text-policy::before {
   display: block;
   border: 1px solid rgba(46, 47, 66, 0.4);
@@ -742,6 +742,9 @@ body {
 .modal-form-checkbox:focus + .text-policy::before {
   outline: 1px solid #4d5ae5;
 }
+.input-form-policy {
+  margin-bottom: 24px;
+}
 .text-policy {
   display: flex;
   align-items: center;
@@ -750,7 +753,6 @@ body {
   line-height: 1.17;
   letter-spacing: 0.04em;
   color: #8e8f99;
-  margin-bottom: 24px;
 }
 .text-policy-link {
   font-weight: 400;
@@ -760,9 +762,9 @@ body {
   text-decoration-line: underline;
   color: #4d5ae5;
 }
+
 .btn-submit-form {
   font-family: "Roboto", sans-serif;
-  align-self: center;
   min-width: 169px;
   height: 56px;
   cursor: pointer;
@@ -770,6 +772,7 @@ body {
   border: none;
   border-radius: 4px;
   color: #ffffff;
+  margin: auto;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .btn-submit-form:hover,
