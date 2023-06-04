@@ -736,12 +736,13 @@ body {
   color: #8e8f99;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
+  fill: transparent;
   content: "";
   width: 16px;
   height: 16px;
   cursor: pointer;
   margin-right: 8px;
-  fill: transparent;
+  
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
     border 250ms cubic-bezier(0.4, 0, 0.2, 1), fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
