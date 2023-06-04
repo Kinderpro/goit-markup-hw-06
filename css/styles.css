@@ -730,8 +730,11 @@ body {
   
 }
 
-.text-policy::before {
-  display: block;
+.text-policy {
+  display: inline-flex;
+  align-items: center;
+   justify-content: center;
+    fill: transparent;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
   content: "";
@@ -741,14 +744,13 @@ body {
   margin-right: 8px;
   transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.modal-form-checkbox:checked + .text-policy::before {
+  
+.modal-form-checkbox:checked + .text-policy {
   background-color: #404bbf;
   border-color: #404bbf;
-  background-image: url(../images/vector.svg);
-  background-repeat: no-repeat;
-  background-position: center;
+  
 }
-.modal-form-checkbox:focus + .text-policy::before {
+.modal-form-checkbox:focus + .text-policy {
   outline: 1px solid #4d5ae5;
 }
 .input-form-policy {
