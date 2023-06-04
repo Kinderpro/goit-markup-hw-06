@@ -742,18 +742,16 @@ body {
   height: 16px;
   cursor: pointer;
   margin-right: 8px;
-  transition: outline 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-  background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-  border-color 250ms cubic-bezier(0.4, 0, 0.2, 1), 
-  fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.modal-form-checkbox:checked + .text-policy {
+.modal-form-checkbox:checked + .text-privacy .text-policy {
   background-color: #404bbf;
   border-color: none;
   fill: #ffffff;
 }
-.modal-form-checkbox:focus + .text-policy {
+.modal-form-checkbox:focus + .text-privacy .text-policy {
   outline: 1px solid #4d5ae5;
 }
 .input-form-policy {
@@ -765,14 +763,6 @@ body {
   letter-spacing: 0.04em;
   color: #8e8f99;
 }
-/* .text-policy {
- 
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 1.17;
-  letter-spacing: 0.04em;
-  color: #8e8f99;
-} */
 .text-policy-link {
   font-weight: 400;
   font-size: 12px;
@@ -781,7 +771,6 @@ body {
   text-decoration-line: underline;
   color: #4d5ae5;
 }
-
 .btn-submit-form {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
